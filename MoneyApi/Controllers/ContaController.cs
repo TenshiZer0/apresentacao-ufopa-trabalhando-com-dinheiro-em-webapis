@@ -176,7 +176,7 @@ public class ContaController : ControllerBase // herda funcionalidades básicas 
         for (int i = 0; i < request.NumeroParcelas; i++)
         {
             var parcela = new ParcelaComJuros();
-            parcela.ValorParcela = i < parcelasComMaiorValor ? menorValorParcela : maiorValorParcela; // as primeiras parcelas receberão o maior valor
+            parcela.ValorParcela = i < parcelasComMaiorValor ? maiorValorParcela : menorValorParcela; // as primeiras parcelas receberão o maior valor
             parcela.SaldoDevedorAntes = saldoDevedor; // saldo devedor antes da amortização
             parcela.Juros = Math.Round(saldoDevedor * request.JurosMensal, 2); // cálculo de juros simples
             parcela.Amortizacao = parcela.ValorParcela - parcela.Juros; // amortização é o quanto realmente vai ser pago da dívida
