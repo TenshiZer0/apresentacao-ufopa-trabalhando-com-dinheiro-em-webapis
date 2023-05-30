@@ -1,5 +1,7 @@
 # Trabalhando com Dinheiro em WebAPIs
 
+Repositório oficial: https://gitlab.com/tenshizer0/apresentacao-ufopa-trabalhando-com-dinheiro-em-webapis
+
 ## Objetivo
 
 Projeto criado para apresentação para alunos da UFOPA em 23/11/2022.
